@@ -35,6 +35,7 @@ a {
 
 .resume {
   max-width : 850px;
+  min-width: 375px;
   margin    : 28px 8%;
 }
 
@@ -89,6 +90,10 @@ article {
   padding-left  : 13px;
   color         : whitesmoke;
   line-height   : 15px;
+}
+
+.date{
+  min-width: 89.42px;
 }
 
 /* * section *** */
