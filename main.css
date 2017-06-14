@@ -4,7 +4,14 @@ body,
 html {
   height      : 100%;
   margin      : 0;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family : 'Roboto Condensed',
+                sans-serif;
+}
+
+body {
+  display          : flex;
+  background-color : rgba(0, 0, 0, 0.42);
+  justify-content  : center;
 }
 
 li,
@@ -26,19 +33,28 @@ a {
 
 /* a:visited{ color: #737373; } */
 
+.resume {
+  max-width : 850px;
+  margin    : 28px 8%;
+}
+
+.content-wrapper {
+  background-color : whitesmoke;
+}
+
 article {
   margin-bottom : 8px;
 }
 
-/* *** header *** */
+/* * header *** */
 
 .header {
-  font-family : 'Oswald',
-                sans-serif;
   display          : flex;
   padding          : 6px 25px;
   border-bottom    : 4px #97ce8a solid;
   background-color : #97ce8a;
+  font-family      : 'Oswald',
+                     sans-serif;
   justify-content  : space-between;
 }
 
@@ -47,7 +63,8 @@ article {
 }
 
 .logo-div * {
-  margin : 0;
+  margin    : 0;
+  font-size : 31px;
 }
 
 .contact-div {
@@ -74,7 +91,7 @@ article {
   line-height   : 15px;
 }
 
-/* *** section *** */
+/* * section *** */
 
 .section {
   display       : flex;
@@ -91,8 +108,8 @@ article {
 }
 
 .content {
-    margin: 2px 5px 16px 46px;
-    flex-grow : 1;
+  margin    : 2px 5px 16px 46px;
+  flex-grow : 1;
 }
 
 .job-title-date {
@@ -107,4 +124,43 @@ article {
 .responsibilities {
   margin  : 0px;
   padding : 0 69px 0 24px;
+}
+
+/* ************* MEDIA QUERIES *************** */
+
+@media (max-width: 640px) {
+  .header {
+    align-items    : center;
+    flex-direction : column;
+  }
+
+  .contact-div * {
+    margin : 0 4px;
+  }
+
+  .logo-div {
+    display         : flex;
+    align-items     : center;
+    flex-direction  : column;
+    justify-content : center;
+  }
+
+  .name {
+    font-size : 40px;
+  }
+
+  .job-title {
+    margin-bottom : 18px;
+    padding       : 0;
+    font-size     : 23px;
+  }
+
+  .section {
+    flex-direction : column;
+  }
+
+  .content {
+    width  : 90%;
+    margin : auto;
+  }
 }
