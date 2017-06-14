@@ -1,4 +1,3 @@
-/* font-family: 'Oswald', sans-serif; font-family: 'VT323', monospace; */
 
 body,
 html {
@@ -31,12 +30,11 @@ a {
   font-size       : 14px;
 }
 
-/* a:visited{ color: #737373; } */
-
 .resume {
   max-width : 850px;
   min-width: 375px;
   margin    : 28px 8%;
+  height: 172%;
 }
 
 .content-wrapper {
@@ -46,8 +44,6 @@ a {
 article {
   margin-bottom : 8px;
 }
-
-/* * header *** */
 
 .header {
   display          : flex;
@@ -96,8 +92,6 @@ article {
   min-width: 89.42px;
 }
 
-/* * section *** */
-
 .section {
   display       : flex;
   margin        : 0 25px;
@@ -133,7 +127,7 @@ article {
 
 /* ************* MEDIA QUERIES *************** */
 
-@media (max-width: 640px) {
+@media (max-width: 675px) {
   .header {
     align-items    : center;
     flex-direction : column;
